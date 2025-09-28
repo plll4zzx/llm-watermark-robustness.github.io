@@ -318,3 +318,18 @@ code {
 #project-toc a:hover {
     color: var(--brand);
 }
+
+.about-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-photo img {
+    max-width: 180px;
+    border-radius: 8px;
+}

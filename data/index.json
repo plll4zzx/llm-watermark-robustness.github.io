@@ -278,5 +278,306 @@
     ],
     "source": "semantic_scholar",
     "seedMatched": "A Watermark for Large Language Models"
+  },
+  {
+    "title": "In-Context Watermarks for Large Language Models",
+    "authors": [
+      "Yepeng Liu",
+      "Xuandong Zhao",
+      "Christopher Kruegel",
+      "D. Song",
+      "Yuheng Bu"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/5063f41336549b08240f14420b9000c2281aab19",
+    "arxivId": "2505.16934",
+    "citationCount": 3,
+    "tags": [
+      "LLM watermark"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Auto-Regressive Speech Generation Models"
+  },
+  {
+    "title": "SoK: Watermarking for AI-Generated Content",
+    "authors": [
+      "Xuandong Zhao",
+      "Sam Gunn",
+      "Miranda Christ",
+      "Jaiden Fairoze",
+      "Andres Fabrega",
+      "Nicholas Carlini",
+      "Sanjam Garg",
+      "Sanghyun Hong",
+      "Milad Nasr",
+      "Florian Tramèr",
+      "Somesh Jha",
+      "Lei Li",
+      "Yu-Xiang Wang",
+      "D. Song"
+    ],
+    "venue": "IEEE Symposium on Security and Privacy",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/ad200cf8c1e4659e42510aa339d71299a1abc9d9",
+    "arxivId": "2411.18479",
+    "citationCount": 34,
+    "tags": [
+      "Survey"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "WATERMARK STEALING IN LARGE LANGUAGE MODELS"
+  },
+  {
+    "title": "Bileve: Securing Text Provenance in Large Language Models Against Spoofing with Bi-level Signature",
+    "authors": [
+      "Tong Zhou",
+      "Xuandong Zhao",
+      "Xiaolin Xu",
+      "Shaolei Ren"
+    ],
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/c3ea3a83a667f417d029fefc5bedc23be443f16d",
+    "arxivId": "2406.01946",
+    "citationCount": 15,
+    "tags": [
+      "RobustWM",
+      "Spoofing"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "WATERMARK STEALING IN LARGE LANGUAGE MODELS"
+  },
+  {
+    "title": "MarkLLM: An Open-Source Toolkit for LLM Watermarking",
+    "authors": [
+      "Leyi Pan",
+      "Aiwei Liu",
+      "Zhiwei He",
+      "Zitian Gao",
+      "Xuandong Zhao",
+      "Yijian Lu",
+      "Binglin Zhou",
+      "Shuliang Liu",
+      "Xuming Hu",
+      "Lijie Wen",
+      "Irwin King"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/29accab7328e0fecc7c85e96372ca9e66e91634b",
+    "arxivId": "2405.10051",
+    "citationCount": 49,
+    "tags": [
+      "Survey"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models"
+  },
+  {
+    "title": "Provable Robust Watermarking for AI-Generated Text",
+    "authors": [
+      "Xuandong Zhao",
+      "P. Ananth",
+      "Lei Li",
+      "Yu-Xiang Wang"
+    ],
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/75b68d0903af9d9f6e47ce3cf7e1a7d27ec811dc",
+    "arxivId": "2306.17439",
+    "citationCount": 214,
+    "tags": [
+      "LLM watermark",
+      "RobustWM",
+      "Model-level watermark"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models"
+  },
+  {
+    "title": "A Semantic Invariant Robust Watermark for Large Language Models",
+    "authors": [
+      "Aiwei Liu",
+      "Leyi Pan",
+      "Xuming Hu",
+      "Shiao Meng",
+      "Lijie Wen"
+    ],
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/893bc4c9d3be06319db7f31b6491110483db5fd1",
+    "arxivId": "2310.06356",
+    "citationCount": 74,
+    "tags": [
+      "Semantic-based",
+      "RobustWM"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models"
+  },
+  {
+    "title": "An Unforgeable Publicly Verifiable Watermark for Large Language Models",
+    "authors": [
+      "Aiwei Liu",
+      "Leyi Pan",
+      "Xuming Hu",
+      "Shuang Li",
+      "Lijie Wen",
+      "Irwin King",
+      "Philip S. Yu"
+    ],
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/0d24a88f29dd87efb90dc8b33c1f41c25f63e574",
+    "arxivId": "2307.16230",
+    "citationCount": 43,
+    "tags": [
+      "LLM watermark"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models"
+  },
+  {
+    "title": "A Private Watermark for Large Language Models",
+    "authors": [
+      "Aiwei Liu",
+      "Leyi Pan",
+      "Xuming Hu",
+      "Shuang Li",
+      "Lijie Wen",
+      "Irwin King",
+      "Philip S. Yu"
+    ],
+    "venue": "arXiv.org",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/d994b38331d42fdaaab87c1f7578f05e99dd4204",
+    "arxivId": null,
+    "citationCount": 23,
+    "tags": [
+      "LLM watermark"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models"
+  },
+  {
+    "title": "A Survey of Text Watermarking in the Era of Large Language Models",
+    "authors": [
+      "Aiwei Liu",
+      "Leyi Pan",
+      "Yijian Lu",
+      "Jingjing Li",
+      "Xuming Hu",
+      "Lijie Wen",
+      "Irwin King",
+      "Philip S. Yu"
+    ],
+    "venue": "ACM Computing Surveys",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/3686311263da911309233e93a271f44f2a1f1c3a",
+    "arxivId": "2312.07913",
+    "citationCount": 84,
+    "tags": [
+      "Survey"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "WATERMARK STEALING IN LARGE LANGUAGE MODELS"
+  },
+  {
+    "title": "Can Watermarked LLMs be Identified by Users via Crafted Prompts?",
+    "authors": [
+      "Aiwei Liu",
+      "Sheng Guan",
+      "Yiming Liu",
+      "Leyi Pan",
+      "Yifei Zhang",
+      "Liancheng Fang",
+      "Lijie Wen",
+      "Philip S. Yu",
+      "Xuming Hu"
+    ],
+    "venue": "International Conference on Learning Representations",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/3861de24a6bfa19caac3583a68b102fe7c1ce334",
+    "arxivId": "2410.03168",
+    "citationCount": 10,
+    "tags": [
+      "Analysis"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "WATERMARK STEALING IN LARGE LANGUAGE MODELS"
+  },
+  {
+    "title": "PMark: Towards Robust and Distortion-free Semantic-level Watermarking with Channel Constraints",
+    "authors": [
+      "Jiahao Huo",
+      "Shuliang Liu",
+      "Bin Wang",
+      "Junyan Zhang",
+      "Yibo Yan",
+      "Aiwei Liu",
+      "Xuming Hu",
+      "Mingxun Zhou"
+    ],
+    "venue": "",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/ca2bdb7a064059951c471de70dced00e10b5f06c",
+    "arxivId": "2509.21057",
+    "citationCount": 0,
+    "tags": [
+      "Semantic-based",
+      "RobustWM",
+      "Distortion-Free"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Auto-Regressive Speech Generation Models"
+  },
+  {
+    "title": "MarkDiffusion: An Open-Source Toolkit for Generative Watermarking of Latent Diffusion Models",
+    "authors": [
+      "Leyi Pan",
+      "Sheng Guan",
+      "Zheyu Fu",
+      "Luyang Si",
+      "Zian Wang",
+      "Xuming Hu",
+      "Irwin King",
+      "Philip S. Yu",
+      "Aiwei Liu",
+      "Lijie Wen"
+    ],
+    "venue": "",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/64788bfadf8297cf1932ef42611440ed75468e01",
+    "arxivId": "2509.10569",
+    "citationCount": 0,
+    "tags": [
+      "Survey"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "Tree-Ring Watermarks: Fingerprints for Diffusion Images that are Invisible and Robust"
+  },
+  {
+    "title": "WaterSeeker: Pioneering Efficient Detection of Watermarked Segments in Large Documents",
+    "authors": [
+      "Leyi Pan",
+      "Aiwei Liu",
+      "Yijian Lu",
+      "Zitian Gao",
+      "Yichen Di",
+      "Lijie Wen",
+      "Irwin King",
+      "Philip S. Yu"
+    ],
+    "venue": "North American Chapter of the Association for Computational Linguistics",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/36476ddaa038f172262a116ed66a7515de9b7bd3",
+    "arxivId": "2409.05112",
+    "citationCount": 4,
+    "tags": [
+      "Analysis"
+    ],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models"
   }
 ]

@@ -305,6 +305,23 @@ async function showProjects(mdFile, title) {
         container.innerHTML = `<p class="muted">Failed to load project doc.</p>`;
     }
 }
+
+
+async function showMarkdown(mdFile, containerId) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = '<p class="muted">Loading…</p>';
+
+    try {
+        const res = await fetch(mdFile, { cache: 'no-store' });
+        const text = await res.text();
+        const html = marked.parse(text);
+        container.innerHTML = html;
+    } catch (err) {
+        container.innerHTML = `<p class="muted">Failed to load ${mdFile}.</p>`;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     showProjects('projects/ndss26/char-ndss-en.md', 'Character-Level Perturbations Disrupt LLM Watermarks (NDSS)');
+    showMarkdown('projects/about/cv.md', 'about-container');
 });
