@@ -7,6 +7,7 @@ Requires: pip install requests pyyaml
 Env var: S2_API_KEY
 """
 import os, json, time, pathlib, requests, yaml
+from ..scripts.utili import update_json_with_new_entries
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -24,15 +25,16 @@ with open(SEEDS, 'r', encoding='utf-8') as f:
 
 out = []
 for s in seeds:
-    query = s.get('query') or s['title']
+    query = s.get('title')
     # 1) find candidate seed paper id
     sr = requests.get(
-    'https://api.semanticscholar.org/graph/v1/paper/search',
-    params={'query': query, 'limit': 1, 'fields':'paperId,title,year'},
-    headers=HEADERS, timeout=30
+        'https://api.semanticscholar.org/graph/v1/paper/search',
+        params={'query': query, 'limit': 1, 'fields':'paperId,title,year'},
+        headers=HEADERS, timeout=30
     )
     sr.raise_for_status(); sdata = sr.json().get('data', [])
-    if not sdata: continue
+    if not sdata: 
+        continue
     pid = sdata[0]['paperId']
     # 2) fetch citations
     cr = requests.get(
@@ -55,17 +57,7 @@ for s in seeds:
             'source': 'semantic_scholar',
             'seedMatched': s['title']
         })
-    time.sleep(0.25)
+    print(f"Seed '{s['title']}' ({pid}): found {len(cdata)} citations")
+    time.sleep(1.1)
 
-
-# Deduplicate by title+year
-uniq = {}
-for p in out:
-    key = (p.get('title','').strip().lower(), p.get('year'))
-    uniq[key] = p
-
-
-(pathlib.Path(DATA)/'candidates_citations.json').write_text(
-json.dumps(list(uniq.values()), ensure_ascii=False, indent=2)
-)
-print(f"Wrote {len(uniq)} items → data/candidates_citations.json")
+update_json_with_new_entries(pathlib.Path(DATA)/'candidates_citations.json', out)

@@ -1,27 +1,3 @@
-llm-watermark-hub/
-├─ index.html # Single-page site with tabs (Reading List, Projects, About)
-├─ assets/
-│ ├─ style.css
-│ └─ app.js # Frontend logic (render tabs; load JSON)
-├─ data/
-│ ├─ index.json # BUILT from /articles/*.yaml (formal, curated list)
-│ ├─ candidates_latest.json # OUTPUT of update_new_papers.py (discovery by keywords)
-│ └─ candidates_citations.json# OUTPUT of update_citations.py (discovery via seed citations)
-├─ articles/ # One curated paper per YAML file (you edit/approve)
-│ └─ example.yaml
-├─ projects/
-│ └─ projects.json # Your published papers; shown in Projects tab
-├─ seeds/
-│ └─ important_papers.yaml # Seed list for citation-tracking
-├─ scripts/
-│ ├─ update_new_papers.py # Manual Update #1 (keyword search)
-│ ├─ update_citations.py # Manual Update #2 (find new papers citing seeds)
-│ └─ build_index.py # Convert curated YAMLs → data/index.json
-├─ .github/
-│ └─ workflows/
-│ └─ update.yml # (Optional) Run scripts manually via GitHub Actions
-└─ README.md # How to use
-
 
 # LLM Watermark Hub
 Static GitHub Pages site with manual updaters for LLM watermark research.
@@ -32,7 +8,7 @@ Static GitHub Pages site with manual updaters for LLM watermark research.
 2. Put files as-is. Commit & push. Turn on **Settings → Pages → Branch: main, / (root)**.
 3. Create `projects/projects.json` with your papers.
 4. (Optional) Get a free Semantic Scholar API key and add it as repo Secret `S2_API_KEY`.
-
+python -m http.server 8000
 
 ## Daily workflow
 - **Discover new papers**: `python scripts/update_new_papers.py` → `data/candidates_latest.json`.

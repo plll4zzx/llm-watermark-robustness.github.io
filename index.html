@@ -28,7 +28,13 @@
                 <button id="show-cites" class="btn">Latest (Citations to Seeds)</button>
             </div>
             <div id="reading-summary" class="muted"></div>
-            <div id="reading-container" class="cards"></div>
+
+            <!-- 🔹 新增 wrapper，里面分左右两栏 -->
+            <div class="reading-layout">
+                <aside id="reading-toc"></aside>
+                <div id="reading-container" class="cards-area"></div>
+            </div>
+
             <p class="muted small">Formal list comes from <code>data/index.json</code>. Discovery lists come from
                 <code>data/candidates_*.json</code>.</p>
         </section>

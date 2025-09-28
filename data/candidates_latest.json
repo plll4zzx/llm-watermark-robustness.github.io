@@ -531,5 +531,1208 @@
     "citationCount": 3,
     "tags": [],
     "source": "semantic_scholar"
+  },
+  {
+    "title": "Multi-Bit Distortion-Free Watermarking for Large Language Models",
+    "authors": [
+      "Massieh Kordi Boroujeny",
+      "Ya Jiang",
+      "Kai Zeng",
+      "Brian L. Mark"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/a7059d44991cc98c75e86a915390dd3abd4fe5fb",
+    "arxivId": "2402.16578",
+    "citationCount": 7,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "EmMark: Robust Watermarks for IP Protection of Embedded Quantized Large Language Models",
+    "authors": [
+      "Ruisi Zhang",
+      "F. Koushanfar"
+    ],
+    "venue": "Design Automation Conference",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/9bb7b17fec7c580de48cdf86111acf78f1074c36",
+    "arxivId": "2402.17938",
+    "citationCount": 8,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Robust Detection of Watermarks for Large Language Models Under Human Edits",
+    "authors": [
+      "Xiang Li",
+      "Feng Ruan",
+      "Huiyuan Wang",
+      "Qi Long",
+      "Weijie J. Su"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/bb41aa5b3a26bd9690cdb7b279ea52bb578a58f4",
+    "arxivId": "2411.13868",
+    "citationCount": 5,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Stealing Watermarks of Large Language Models via Mixed Integer Programming",
+    "authors": [
+      "Zhaoxi Zhang",
+      "Xiaomei Zhang",
+      "Yanjun Zhang",
+      "Leo Yu Zhang",
+      "Chao Chen",
+      "Shengshan Hu",
+      "Asif Gill",
+      "Shirui Pan"
+    ],
+    "venue": "Asia-Pacific Computer Systems Architecture Conference",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/a6854f91dbad0b39a0289872ac838545a9c18225",
+    "arxivId": null,
+    "citationCount": 3,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Cross-Attention watermarking of Large Language Models",
+    "authors": [
+      "Folco Bertini Baldassini",
+      "H. Nguyen",
+      "Ching-Chung Chang",
+      "Isao Echizen"
+    ],
+    "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/521a04bb8d84798e78ee796d7d725d6528fc182d",
+    "arxivId": "2401.06829",
+    "citationCount": 2,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "VLA-Mark: A cross modal watermark for large vision-language alignment model",
+    "authors": [
+      "Shuliang Liu",
+      "Qi Zheng",
+      "Jesse Jiaxi Xu",
+      "Yibo Yan",
+      "He Geng",
+      "Aiwei Liu",
+      "Peijie Jiang",
+      "Jia Liu",
+      "Yik-Cheung Tam",
+      "Xuming Hu"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/84f10b8b5bfa46b570eea09a4967eb0ac91933da",
+    "arxivId": "2507.14067",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "MARKMyWORDS: Analyzing and Evaluating Language Model Watermarks",
+    "authors": [
+      "Julien Piet",
+      "Chawin Sitawarin",
+      "Vivian Fang",
+      "Norman Mu",
+      "David A. Wagner"
+    ],
+    "venue": "2025 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/8b4bdf5597be80cb83f668058609939a44a76297",
+    "arxivId": "2312.00273",
+    "citationCount": 42,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Task-Agnostic Language Model Watermarking via High Entropy Passthrough Layers",
+    "authors": [
+      "Vaden Masrani",
+      "Mohammad Akbari",
+      "David Yue",
+      "Ahmad Rezaei",
+      "Yong Zhang"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/d033fe536aace60c3e1477515b93f45dab3688be",
+    "arxivId": "2412.12563",
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "\"Yes, My LoRD.\" Guiding Language Model Extraction with Locality Reinforced Distillation",
+    "authors": [
+      "Zi Liang",
+      "Qingqing Ye",
+      "Yanyun Wang",
+      "Sen Zhang",
+      "Yaxin Xiao",
+      "Ronghua Li",
+      "Jianliang Xu",
+      "Haibo Hu"
+    ],
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/dca9242b227eebb3f052139dcb6a45c4dcbfde83",
+    "arxivId": "2409.02718",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Advancing Beyond Identification: Multi-bit Watermark for Language Models",
+    "authors": [
+      "Kiyoon Yoo",
+      "Wonhyuk Ahn",
+      "N. Kwak"
+    ],
+    "venue": "arXiv.org",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/cf046cee879e39c34dcb8057b9de06210e592536",
+    "arxivId": null,
+    "citationCount": 32,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "A Watermark for Black-Box Language Models",
+    "authors": [
+      "Dara Bahri",
+      "J. Michael Wieting",
+      "Dana Alon",
+      "Donald Metzler"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/976aa5e91b25d345d747952e17a67f53a04deb18",
+    "arxivId": "2410.02099",
+    "citationCount": 8,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Inevitable Trade-off between Watermark Strength and Speculative Sampling Efficiency for Language Models",
+    "authors": [
+      "Zhengmian Hu",
+      "Heng Huang"
+    ],
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/0d19cb8a04601929be86ab7d64f21ced130557ff",
+    "arxivId": "2410.20418",
+    "citationCount": 4,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "MorphMark: Flexible Adaptive Watermarking for Large Language Models",
+    "authors": [
+      "Zongqi Wang",
+      "Tianle Gu",
+      "Baoyuan Wu",
+      "Yujiu Yang"
+    ],
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/7117c2eb7367cdf8dfcf63d03489ecee2afc6a31",
+    "arxivId": "2505.11541",
+    "citationCount": 4,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Post-Hoc Watermarking for Robust Detection in Text Generated by Large Language Models",
+    "authors": [
+      "Jifei Hao",
+      "Jipeng Qiang",
+      "Yi Zhu",
+      "Yun Li",
+      "Yunhao Yuan",
+      "Xiaoye Ouyang"
+    ],
+    "venue": "International Conference on Computational Linguistics",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/f2864081e3220eb932bfbbc4d69814599d7162be",
+    "arxivId": null,
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Black-Box Text Watermarking Algorithm towards Large Language Models",
+    "authors": [
+      "奕辰 姚"
+    ],
+    "venue": "Modeling and Simulation",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/44ed96ad930ad61d83c2bc49905ca52b10a7fc99",
+    "arxivId": null,
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "A Contrastive Semantic Watermarking Framework for Large Language Models",
+    "authors": [
+      "Jianxin Wang",
+      "Xiangze Chang",
+      "Chaoen Xiao",
+      "Lei Zhang"
+    ],
+    "venue": "Symmetry",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/9421c649fec086c741fc9e8ad556a637ee61dddd",
+    "arxivId": null,
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Robust and Efficient Watermarking of Large Language Models Using Error Correction Codes",
+    "authors": [
+      "Xiaokun Luan",
+      "Zeming Wei",
+      "Yihao Zhang",
+      "Meng Sun"
+    ],
+    "venue": "Proceedings on Privacy Enhancing Technologies",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/c20fe9ec0341f744c242eef17fec1143be35a560",
+    "arxivId": null,
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Can you Finetune your Binoculars? Embedding Text Watermarks into the Weights of Large Language Models",
+    "authors": [
+      "Fay Elhassan",
+      "Niccolo Ajroldi",
+      "Antonio Orvieto",
+      "Jonas Geiping"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/5ca4ea932c08a63e49e967202504708ee18fc870",
+    "arxivId": "2504.06446",
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "ModelShield: Adaptive and Robust Watermark Against Model Extraction Attack",
+    "authors": [
+      "Kaiyi Pang",
+      "Tao Qi",
+      "Chuhan Wu",
+      "Minhao Bai",
+      "Minghu Jiang",
+      "Yongfeng Huang"
+    ],
+    "venue": "IEEE Transactions on Information Forensics and Security",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/3434f582cc9c2818785e2920241d43d932625539",
+    "arxivId": "2405.02365",
+    "citationCount": 6,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Adaptive and robust watermark against model extraction attack",
+    "authors": [
+      "Kaiyi Pang",
+      "Tao Qi",
+      "Chuhan Wu",
+      "Minhao Bai"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/eda84e4a546a2316a32fa5654c1cfda5a6d4aeec",
+    "arxivId": null,
+    "citationCount": 3,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Task-Agnostic Language Model Watermarking via High Entropy Passthrough Layers",
+    "authors": [
+      "Vaden Masrani",
+      "Mohammad Akbari",
+      "David Yue",
+      "Ahmad Rezaei",
+      "Yong Zhang"
+    ],
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/cca687007c8c0a9820cc31a812b31718b5ff8947",
+    "arxivId": null,
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Watermark and Trademark Prompts Boost Video Action Recognition in Visual-Language Models",
+    "authors": [
+      "Longbin Jin",
+      "Hyuntae Jung",
+      "Hyo Jin Jon",
+      "Eun Yi Kim"
+    ],
+    "venue": "Mathematics",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/46cf32dff6fbbcf0b7c8d9e85436a5e0790f2e79",
+    "arxivId": null,
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "WAPITI: A Watermark for Finetuned Open-Source LLMs",
+    "authors": [
+      "Lingjie Chen",
+      "Ruizhong Qiu",
+      "Siyu Yuan",
+      "Zhining Liu",
+      "Tianxin Wei",
+      "Hyunsik Yoo",
+      "Zhichen Zeng",
+      "Deqing Yang",
+      "Hanghang Tong"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/bdf522853ff678de8be87b854aff5e2bdd36d501",
+    "arxivId": "2410.06467",
+    "citationCount": 10,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "DUAW: Data-free Universal Adversarial Watermark against Stable Diffusion Customization",
+    "authors": [
+      "Xiaoyu Ye",
+      "Hao Huang",
+      "Jiaqi An",
+      "Yongtao Wang"
+    ],
+    "venue": "arXiv.org",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/a32cfc2e12430cfe109a12087c9e0d8177c94397",
+    "arxivId": "2308.09889",
+    "citationCount": 24,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "PromptCARE: Prompt Copyright Protection by Watermark Injection and Verification",
+    "authors": [
+      "Hongwei Yao",
+      "Jian Lou",
+      "Kui Ren",
+      "Zhan Qin"
+    ],
+    "venue": "IEEE Symposium on Security and Privacy",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/e476b207fffb2b15f0adc39f8f8c1c8643a63311",
+    "arxivId": "2308.02816",
+    "citationCount": 34,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Towards Effective User Attribution for Latent Diffusion Models via Watermark-Informed Blending",
+    "authors": [
+      "Yongyang Pan",
+      "Xiaohong Liu",
+      "Siqi Luo",
+      "Yi Xin",
+      "Xiao Guo",
+      "Xiaoming Liu",
+      "Xiongkuo Min",
+      "Guangtao Zhai"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/d56c37f283f26d082a253484539778cd987fa50c",
+    "arxivId": "2409.10958",
+    "citationCount": 5,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Undetectable Watermarks for Language Models",
+    "authors": [
+      "Miranda Christ",
+      "S. Gunn",
+      "Or Zamir"
+    ],
+    "venue": "IACR Cryptology ePrint Archive",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/7baae1691bc8c4012f2193e174de94c228afa8f8",
+    "arxivId": "2306.09194",
+    "citationCount": 167,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Watermarking Makes Language Models Radioactive",
+    "authors": [
+      "Tom Sander",
+      "Pierre Fernandez",
+      "A. Durmus",
+      "Matthijs Douze",
+      "Teddy Furon"
+    ],
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/02c4ca0c184cbb81931f8e43ef943a181d5dad84",
+    "arxivId": "2402.14904",
+    "citationCount": 25,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Temperature Matters: Enhancing Watermark Robustness Against Paraphrasing Attacks",
+    "authors": [
+      "Badr Youbi Idrissi",
+      "Monica Millunzi",
+      "Amelia Sorrenti",
+      "Lorenzo Baraldi",
+      "Daryna Dementieva"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/f2edab482adc4ecd39d88d560d13f82fb5e30957",
+    "arxivId": "2506.22623",
+    "citationCount": 3,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Optimal Estimation of Watermark Proportions in Hybrid AI-Human Texts",
+    "authors": [
+      "Xiang Li",
+      "Garrett Wen",
+      "Weiqing He",
+      "Jiayuan Wu",
+      "Qi Long",
+      "Weijie J. Su"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/86f4fa9f6ef96c31866d7dba2fe45a88be53cf60",
+    "arxivId": "2506.22343",
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Provably Robust Watermarks for Open-Source Language Models",
+    "authors": [
+      "Miranda Christ",
+      "Sam Gunn",
+      "Tal Malkin",
+      "Mariana Raykova"
+    ],
+    "venue": "IACR Cryptology ePrint Archive",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/95e61a5a96cbac020ea326a95613b74300b5eccd",
+    "arxivId": "2410.18861",
+    "citationCount": 5,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Watermarking Language Models through Language Models",
+    "authors": [
+      "Xin Zhong",
+      "Agnibh Dasgupta",
+      "A. Tanvir"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/8fa135e3ea7e8a079cf476d087944ecea3c4353b",
+    "arxivId": "2411.05091",
+    "citationCount": 4,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Model Equality Testing: Which Model Is This API Serving?",
+    "authors": [
+      "Irena Gao",
+      "Percy Liang",
+      "Carlos Guestrin"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/3d5219495da19f2940588fdf1bfd744cdd4c79f4",
+    "arxivId": "2410.20247",
+    "citationCount": 10,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Improving Detection of Watermarked Language Models",
+    "authors": [
+      "Dara Bahri",
+      "J. Michael Wieting"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/21b5ad705068d50cc18af9f564603bee5082f7af",
+    "arxivId": "2508.13131",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Watermarking Degrades Alignment in Language Models: Analysis and Mitigation",
+    "authors": [
+      "Apurv Verma",
+      "Nhathai Phan",
+      "Shubhendu Trivedi"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/c30cabc37dd04d6bf322bb13e81b9c34cebfe12a",
+    "arxivId": "2506.04462",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Research on a watermarking recognition method for PDF documents based on natural language processing",
+    "authors": [
+      "Rui Liu",
+      "Shu Li",
+      "Zizun Li",
+      "Yizhen Sun",
+      "Zheru Cai",
+      "Dawei Dai"
+    ],
+    "venue": "Conference on Computer Science and Communication Technology",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/d3f5129fbcd8c0ce3b3020bf139485a99dfeeccb",
+    "arxivId": null,
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "PersonaMark: Personalized LLM watermarking for model protection and user attribution",
+    "authors": [
+      "Yue Zhang",
+      "Peizhuo Lv",
+      "Yinpeng Liu",
+      "Yongqiang Ma",
+      "Wei Lu",
+      "Xiaofeng Wang",
+      "Xiaozhong Liu",
+      "Jiawei Liu"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/5cbffa3fc70a3994fca4a56227de6e0baa098872",
+    "arxivId": "2409.09739",
+    "citationCount": 3,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Safe-VAR: Safe Visual Autoregressive Model for Text-to-Image Generative Watermarking",
+    "authors": [
+      "Ziyi Wang",
+      "Songbai Tan",
+      "Gang Xu",
+      "Xuerui Qiu",
+      "Hongbin Xu",
+      "Xin Meng",
+      "Ming Li",
+      "F. Yu"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/63c98d017bde87b0fed80082cffe0a3de301e28d",
+    "arxivId": "2503.11324",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Protecting Intellectual Property of Deep Neural Networks with Watermarking",
+    "authors": [
+      "Jialong Zhang",
+      "Zhongshu Gu",
+      "Jiyong Jang",
+      "Hui Wu",
+      "M. Stoecklin",
+      "Heqing Huang",
+      "Ian Molloy"
+    ],
+    "venue": "ACM Asia Conference on Computer and Communications Security",
+    "year": 2018,
+    "url": "https://www.semanticscholar.org/paper/97e748935bef3db297b90aed736064a51e68668d",
+    "arxivId": null,
+    "citationCount": 560,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Bypassing LLM Watermarks with Color-Aware Substitutions",
+    "authors": [
+      "Qilong Wu",
+      "Varun Chandrasekaran"
+    ],
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/144399b7708c0e15b8f067f7635df173a7067905",
+    "arxivId": "2403.14719",
+    "citationCount": 21,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Can LLM Watermarks Robustly Prevent Unauthorized Knowledge Distillation?",
+    "authors": [
+      "Leyi Pan",
+      "Aiwei Liu",
+      "Shiyu Huang",
+      "Yijian Lu",
+      "Xuming Hu",
+      "Lijie Wen",
+      "Irwin King",
+      "Philip S. Yu"
+    ],
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/4cf8657c90f1e5b94cef46cdf1764a6390e26edd",
+    "arxivId": "2502.11598",
+    "citationCount": 5,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks",
+    "authors": [
+      "Yixin Cheng",
+      "Hongcheng Guo",
+      "Yangming Li",
+      "Leonid Sigal"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/1f4e4f10512030996fb9ba448a54eb3d7fa16f96",
+    "arxivId": "2505.05190",
+    "citationCount": 3,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Where Am I From? Identifying Origin of LLM-generated Content",
+    "authors": [
+      "Liying Li",
+      "Yihan Bai",
+      "Minhao Cheng"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/4882d6dd815226b830ad143be471555876be9df4",
+    "arxivId": null,
+    "citationCount": 4,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Theoretically Grounded Framework for LLM Watermarking: A Distribution-Adaptive Approach",
+    "authors": [
+      "Haiyun He",
+      "Yepeng Liu",
+      "Ziqiao Wang",
+      "Yongyi Mao",
+      "Yuheng Bu"
+    ],
+    "venue": "",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/be95cbf97d7d9499692328dfcc3aeb4b0844e888",
+    "arxivId": "2410.02890",
+    "citationCount": 3,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings",
+    "authors": [
+      "Saksham Rastogi",
+      "Pratyush Maini",
+      "Danish Pruthi"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/d1006b6233f86e67ed2283c084e1dacfbdc3e71b",
+    "arxivId": "2504.13416",
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Watermarking LLMs with Weight Quantization",
+    "authors": [
+      "Linyang Li",
+      "Botian Jiang",
+      "Pengyu Wang",
+      "Ke Ren",
+      "Hang Yan",
+      "Xipeng Qiu"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/7a96b4f41b1b5ee621da33612228c6d0e3045dc8",
+    "arxivId": "2310.11237",
+    "citationCount": 14,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "RoboSignature: Robust Signature and Watermarking on Network Attacks",
+    "authors": [
+      "Aryaman Shaan",
+      "Garvit Banga",
+      "Raghav Mantri"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/e71192f9d0b7c48ec8bd854dfeeb3150215fae55",
+    "arxivId": "2412.19834",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "LLM-Text Watermarking based on Lagrange Interpolation",
+    "authors": [
+      "Jaroslaw Janas",
+      "P. Morawiecki",
+      "Josef Pieprzyk"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/f3bdd3d58c44f5ec7beff0ed3286ba2be674ba11",
+    "arxivId": "2505.05712",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Watermarking LLMs — Challenges and Opportunities in Electronic Design Automation",
+    "authors": [
+      "Matthew DeLorenzo",
+      "Phat Tieu",
+      "Chen Chen",
+      "Vasudev Gohil",
+      "Jeyavijayan Rajendran"
+    ],
+    "venue": "Coins",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/fd543e89551962e734344cd758a2c968732fe57d",
+    "arxivId": null,
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "HeavyWater and SimplexWater: Watermarking Low-Entropy Text Distributions",
+    "authors": [
+      "Dor Tsur",
+      "Carol Xuan Long",
+      "C. M. Verdun",
+      "Hsiang Hsu",
+      "Chen-Fu Chen",
+      "H. Permuter",
+      "Sajani Vithana",
+      "F. Calmon"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/f78ef14f389c7b92c83e1a074542309ad9076bb4",
+    "arxivId": "2506.06409",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Agent Guide: A Simple Agent Behavioral Watermarking Framework",
+    "authors": [
+      "Kaibo Huang",
+      "Zhongliang Yang",
+      "Linna Zhou"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/3d483169ad86fec17f0c6c67bfbdc3364af867a0",
+    "arxivId": "2504.05871",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Character-Level Perturbations Disrupt LLM Watermarks",
+    "authors": [
+      "Zhaoxi Zhang",
+      "Xiaomei Zhang",
+      "Yanjun Zhang",
+      "He Zhang",
+      "Shirui Pan",
+      "Bo Liu",
+      "Asif Gill",
+      "L. Zhang"
+    ],
+    "venue": "",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/e6b82de3d1fdf132c21e1d106ddbbb49ae21feb7",
+    "arxivId": "2509.09112",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "RLCracker: Exposing the Vulnerability of LLM Watermarks with Adaptive RL Attacks",
+    "authors": [
+      "Hanbo Huang",
+      "Yiran Zhang",
+      "Hao Zheng",
+      "Xuan Gong",
+      "Yihan Li",
+      "Lin Liu",
+      "Shiyu Liang"
+    ],
+    "venue": "",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/c66d71b8411ce07dac5e646ebe840d1078dcd0bc",
+    "arxivId": "2509.20924",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "X-Mark: Towards Lossless Watermarking Through Lexical Redundancy",
+    "authors": [
+      "Liang Chen",
+      "Yatao Bian",
+      "Yang Deng",
+      "Shuaiyi Li",
+      "Bingzhe Wu",
+      "Peilin Zhao",
+      "Kam-Fai Wong"
+    ],
+    "venue": "arXiv.org",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/f74a2014346701d64988c58ab9e2d38fb38dd9ff",
+    "arxivId": null,
+    "citationCount": 10,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "AIME: Watermarking AI Models by Leveraging Errors",
+    "authors": [
+      "Dhwani Mehta",
+      "Nurun N. Mondol",
+      "Farimah Farahmandi",
+      "M. Tehranipoor"
+    ],
+    "venue": "Design, Automation and Test in Europe",
+    "year": 2022,
+    "url": "https://www.semanticscholar.org/paper/08de2726c1bce595e080bc6c1ea072756c762cd8",
+    "arxivId": null,
+    "citationCount": 11,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Protecting Your NLG Models with Semantic and Robust Watermarks",
+    "authors": [
+      "Tao Xiang",
+      "Chunlong Xie",
+      "Shangwei Guo",
+      "Jiwei Li",
+      "Tianwei Zhang"
+    ],
+    "venue": "arXiv.org",
+    "year": 2021,
+    "url": "https://www.semanticscholar.org/paper/56200d6a732ad516d5b28465531636aa8b5caf19",
+    "arxivId": "2112.05428",
+    "citationCount": 10,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "WavLLM: Towards Robust and Adaptive Speech Large Language Model",
+    "authors": [
+      "Shujie Hu",
+      "Long Zhou",
+      "Shujie Liu",
+      "Sanyuan Chen",
+      "Hongkun Hao",
+      "Jing Pan",
+      "Xunying Liu",
+      "Jinyu Li",
+      "S. Sivasankaran",
+      "Linquan Liu",
+      "Furu Wei"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/1a41d449f2ed4051ac4c763fb8b1b07357eaf5f4",
+    "arxivId": "2404.00656",
+    "citationCount": 87,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "LaCo: Large Language Model Pruning via Layer Collapse",
+    "authors": [
+      "Yifei Yang",
+      "Zouying Cao",
+      "Hai Zhao"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/7d00e7337fbbccd0208361b4c204c75239a96521",
+    "arxivId": "2402.11187",
+    "citationCount": 74,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "KICGPT: Large Language Model with Knowledge in Context for Knowledge Graph Completion",
+    "authors": [
+      "Yanbin Wei",
+      "Qiushi Huang",
+      "Yu Zhang",
+      "James T. Kwok"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/13c0f33ccd88607fce4819135e404a988aa8aad4",
+    "arxivId": "2402.02389",
+    "citationCount": 54,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Let Me Speak Freely? A Study On The Impact Of Format Restrictions On Large Language Model Performance.",
+    "authors": [
+      "Zhi Rui Tam",
+      "Cheng-Kuang Wu",
+      "Yi-Lin Tsai",
+      "Chieh-Yen Lin",
+      "Hung-yi Lee",
+      "Yun-Nung Chen"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/7c394a8b4db70d7424abc300749fff0fe580bdae",
+    "arxivId": "2408.02442",
+    "citationCount": 47,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "LLM-A*: Large Language Model Enhanced Incremental Heuristic Search on Path Planning",
+    "authors": [
+      "Silin Meng",
+      "Yiwei Wang",
+      "Cheng-Fu Yang",
+      "Nanyun Peng",
+      "Kai-Wei Chang"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/8bb5b517012530244497beb4d1b7257d3c76661c",
+    "arxivId": "2407.02511",
+    "citationCount": 38,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "ApiQ: Finetuning of 2-Bit Quantized Large Language Model",
+    "authors": [
+      "Baohao Liao",
+      "C. Monz"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/4d5cbfbba6e336075cf11c7229b38b098d9243d1",
+    "arxivId": "2402.05147",
+    "citationCount": 17,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "CoSafe: Evaluating Large Language Model Safety in Multi-Turn Dialogue Coreference",
+    "authors": [
+      "Erxin Yu",
+      "Jing Li",
+      "Ming Liao",
+      "Siqi Wang",
+      "Zuchen Gao",
+      "Fei Mi",
+      "Lanqing Hong"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/b0f8b91c2ca91803324069bc237b15314f70e6ca",
+    "arxivId": "2406.17626",
+    "citationCount": 22,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "LLMC: Benchmarking Large Language Model Quantization with a Versatile Compression Toolkit",
+    "authors": [
+      "Ruihao Gong",
+      "Yang Yong",
+      "Shiqiao Gu",
+      "Yushi Huang",
+      "Yunchen Zhang",
+      "Xianglong Liu",
+      "Dacheng Tao"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/ebbf09b46073d82054de49a9ee9adb76c83daeb8",
+    "arxivId": "2405.06001",
+    "citationCount": 19,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "StructGPT: A General Framework for Large Language Model to Reason over Structured Data",
+    "authors": [
+      "Jinhao Jiang",
+      "Kun Zhou",
+      "Zican Dong",
+      "Keming Ye",
+      "Wayne Xin Zhao",
+      "Ji-rong Wen"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/e0f27336698c84709bd60b6b7f4ce588cbae66bf",
+    "arxivId": "2305.09645",
+    "citationCount": 351,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis",
+    "authors": [
+      "Erik Nijkamp",
+      "Bo Pang",
+      "Hiroaki Hayashi",
+      "Lifu Tu",
+      "Haiquan Wang",
+      "Yingbo Zhou",
+      "S. Savarese",
+      "Caiming Xiong"
+    ],
+    "venue": "International Conference on Learning Representations",
+    "year": 2022,
+    "url": "https://www.semanticscholar.org/paper/38115e80d805fb0fb8f090dc88ced4b24be07878",
+    "arxivId": "2203.13474",
+    "citationCount": 1163,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "CBT-LLM: A Chinese Large Language Model for Cognitive Behavioral Therapy-based Mental Health Question Answering",
+    "authors": [
+      "Hongbin Na"
+    ],
+    "venue": "International Conference on Language Resources and Evaluation",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/07a52d25dd5d091957fbdfa6abd28a394719ef15",
+    "arxivId": "2403.16008",
+    "citationCount": 27,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "Large Language Model-based Human-Agent Collaboration for Complex Task Solving",
+    "authors": [
+      "Xueyang Feng",
+      "Zhi-Yuan Chen",
+      "Yujia Qin",
+      "Yankai Lin",
+      "Xu Chen",
+      "Zhiyuan Liu",
+      "Ji-Rong Wen"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/a70f0f9b9b9dc7d5caadcb23a551ea4213727548",
+    "arxivId": "2402.12914",
+    "citationCount": 29,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "GenSim: A General Social Simulation Platform with Large Language Model based Agents",
+    "authors": [
+      "Jiakai Tang",
+      "Heyang Gao",
+      "Xuchen Pan",
+      "Lei Wang",
+      "Haoran Tan",
+      "Dawei Gao",
+      "Yushuo Chen",
+      "Xu Chen",
+      "Yankai Lin",
+      "Yaliang Li",
+      "Bolin Ding",
+      "Jingren Zhou",
+      "Jun Wang",
+      "Jiayao Wen"
+    ],
+    "venue": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (System Demonstrations)",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/b60d60e04b2ab6fb1845101bdd3156651b12482d",
+    "arxivId": "2410.04360",
+    "citationCount": 21,
+    "tags": [],
+    "source": "semantic_scholar"
+  },
+  {
+    "title": "QDyLoRA: Quantized Dynamic Low-Rank Adaptation for Efficient Large Language Model Tuning",
+    "authors": [
+      "Hossein Rajabzadeh",
+      "Mojtaba Valipour",
+      "Tianshu Zhu",
+      "Marzieh S. Tahaei",
+      "Hyock Ju Kwon",
+      "Ali Ghodsi",
+      "Boxing Chen",
+      "Mehdi Rezagholizadeh"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/ca4f0d2c85cfe46b97ec42b38decda107780769d",
+    "arxivId": "2402.10462",
+    "citationCount": 17,
+    "tags": [],
+    "source": "semantic_scholar"
   }
 ]

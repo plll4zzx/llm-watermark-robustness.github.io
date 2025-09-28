@@ -145,3 +145,101 @@ code {
     border-radius: 6px;
     border: 1px solid #1f2633;
 }
+
+.card h3 a {
+    color: #ffffff;
+    text-decoration: none;
+    /* 去掉下划线，可选 */
+}
+
+.card h3 a:hover {
+    color: #5ea0ef;
+    text-decoration: underline;
+}
+
+.toc {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    padding: 10px;
+    border-right: 1px solid #1f2633;
+    position: sticky;
+    top: 80px;
+    /* 保持在页面左边 */
+}
+
+.toc h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin-bottom: 6px;
+}
+
+.toc a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.toc a:hover {
+    color: var(--brand);
+}
+
+.reading-layout {
+    display: flex;
+    align-items: flex-start;
+}
+
+#reading-toc {
+    width: 200px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    position: sticky;
+    top: 80px;
+}
+
+.cards-area {
+    flex: 1;
+    min-width: 0;
+    /* 防止内容被压缩 */
+}
+
+.cards-area h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.toc h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin-bottom: 6px;
+}
+
+.toc a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.toc a:hover {
+    color: var(--brand);
+}

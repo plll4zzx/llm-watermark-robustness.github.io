@@ -6,6 +6,7 @@ Requires: pip install requests pyyaml
 Env var: S2_API_KEY (get one at https://www.semanticscholar.org/product/api)
 """
 import os, json, time, pathlib, requests
+from utili import update_json_with_new_entries
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -55,10 +56,10 @@ for idx in range(len(QUERIES)):
             })
         params['offset'] += params['limit']
         print(f"Query {idx+1}/{len(QUERIES)} '{q}': fetched {len(items)} items (offset {params['offset']})")
-        if len(items) == 0 or params['offset'] >= 30:
+        if len(items) == 0 or params['offset'] >= 100:
             break
         time.sleep(1.1)
 
 
-(DATA / 'candidates_latest.json').write_text(json.dumps(all_items, ensure_ascii=False, indent=2))
+update_json_with_new_entries(pathlib.Path(DATA)/'candidates_latest.json', all_items)
 print(f"Wrote {len(all_items)} items → data/candidates_latest.json")
