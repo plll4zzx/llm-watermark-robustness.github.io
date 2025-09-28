@@ -1,7 +1,7 @@
 seeds:
-- title: "Robust Watermarking for Language Models"
-query: "\"language model watermark\" OR \"LLM watermark\""
-s2PaperId: null
-- title: "A Watermark for Large Language Models of Code"
-query: "\"watermark\" code large language models"
-s2PaperId: null
+  - title: "Robust Watermarking for Language Models"
+    query: "\"language model watermark\" OR \"LLM watermark\""
+    s2PaperId: null
+  - title: "A Watermark for Large Language Models of Code"
+    query: "\"watermark\" code large language models"
+    s2PaperId: null

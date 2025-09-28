@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-      with: { python-version: '3.11' }
+        with: { python-version: '3.11' }
       - run: pip install requests pyyaml
       - name: Run task
         env:
@@ -25,7 +25,7 @@ jobs:
           if [ "${{ github.event.inputs.task }}" = "latest" ]; then python scripts/update_new_papers.py; fi
           if [ "${{ github.event.inputs.task }}" = "citations" ]; then python scripts/update_citations.py; fi
           if [ "${{ github.event.inputs.task }}" = "build" ]; then python scripts/build_index.py; fi
-        - name: Commit & push
+      - name: Commit & push
         run: |
           git config user.name github-actions
           git config user.email actions@github.com

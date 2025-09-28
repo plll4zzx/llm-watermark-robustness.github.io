@@ -68,11 +68,11 @@ function renderPaperCard(container) {
         const link = p.url || p.arxivId ? (p.url || `https://arxiv.org/abs/${p.arxivId}`) : '#';
         const tags = p.tags || [];
         card.innerHTML = `
-<h3><a href="${link}" target="_blank" rel="noopener">${p.title || 'Untitled'}</a></h3>
-<div class="meta">${authors || 'Unknown authors'}${venue ? ' — ' + venue : ''}${p.citationCount != null ? ` — cites: ${p.citationCount}` : ''}</div>
-${p.abstract ? `<p class="small">${p.abstract.slice(0, 220)}${p.abstract.length > 220 ? '…' : ''}</p>` : ''}
-<div class="badges">${tags.map(t => `<span class="badge">${t}</span>`).join('')}</div>
-`;
+            <h3><a href="${link}" target="_blank" rel="noopener">${p.title || 'Untitled'}</a></h3>
+            <div class="meta">${authors || 'Unknown authors'}${venue ? ' — ' + venue : ''}${p.citationCount != null ? ` — cites: ${p.citationCount}` : ''}</div>
+            ${p.abstract ? `<p class="small">${p.abstract.slice(0, 220)}${p.abstract.length > 220 ? '…' : ''}</p>` : ''}
+            <div class="badges">${tags.map(t => `<span class="badge">${t}</span>`).join('')}</div>
+        `;
         container.appendChild(card);
     };
 }
@@ -89,4 +89,13 @@ async function renderProjects() {
             const card = document.createElement('article');
             card.className = 'card';
             card.innerHTML = `
+                <h3><a href="${p.url}" target="_blank" rel="noopener">${p.title}</a></h3>
+                <div class="meta">${(p.authors || []).join(', ')} — ${p.venue || ''} ${p.year || ''}</div>
+                ${p.note ? `<p class="small">${p.note}</p>` : ''}
+            `;
+            container.appendChild(card);
+        });
+    } catch (err) {
+        container.innerHTML = '<p class="muted">Add <code>projects/projects.json</code> to show your papers.</p>';
+    }
 }

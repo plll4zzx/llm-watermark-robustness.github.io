@@ -1,0 +1,532 @@
+[
+  {
+    "title": "Enhancing LLM Watermark Resilience Against Both Scrubbing and Spoofing Attacks",
+    "authors": [
+      "Huanming Shen",
+      "Baizhou Huang",
+      "Xiaojun Wan"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/38c9e2124b148117f13fddd444edc072d4fbb93e",
+    "arxivId": "2507.06274",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "Robust Watermarking for Language Models"
+  },
+  {
+    "title": "Watermarking Autoregressive Image Generation",
+    "authors": [
+      "Nikola Jovanovi'c",
+      "Ismail Labiad",
+      "Tomás Soucek",
+      "Martin T. Vechev",
+      "Pierre Fernandez"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/329e676bad92d173f81ec4bab5523ebdf1f40e94",
+    "arxivId": "2506.16349",
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "Robust Watermarking for Language Models"
+  },
+  {
+    "title": "BiMark: Unbiased Multilayer Watermarking for Large Language Models",
+    "authors": [
+      "Xiaoyan Feng",
+      "He Zhang",
+      "Yanjun Zhang",
+      "L. Zhang",
+      "Shirui Pan"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/f1aeb16a3d150133f269fd735f68798a9fe97efe",
+    "arxivId": "2506.21602",
+    "citationCount": 2,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "Robust Watermarking for Language Models"
+  },
+  {
+    "title": "SoK: Are Watermarks in LLMs Ready for Deployment?",
+    "authors": [
+      "Kieu Dang",
+      "Phung Lai",
+      "Nhathai Phan",
+      "Yelong Shen",
+      "Ruoming Jin",
+      "Abdallah Khreishah",
+      "My T. Thai"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/f9b4f91ceca3254f882789b330b7c9044bf408a8",
+    "arxivId": "2506.05594",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Breaking Distortion-free Watermarks in Large Language Models",
+    "authors": [
+      "Shayleen Reynolds",
+      "Saheed O. Obitayo",
+      "Niccolò Dalmasso",
+      "D. D. Ngo",
+      "Vamsi K. Potluru",
+      "Manuela Veloso"
+    ],
+    "venue": "",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/8f338ccac2c64e742f7b37f2ed4310d83334d7e3",
+    "arxivId": "2502.18608",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "Robust Watermarking for Language Models"
+  },
+  {
+    "title": "SoK: On the Role and Future of AIGC Watermarking in the Era of Gen-AI",
+    "authors": [
+      "Kui Ren",
+      "Ziqi Yang",
+      "Li Lu",
+      "Jian Liu",
+      "Yiming Li",
+      "Jie Wan",
+      "Xiaodi Zhao",
+      "Xianheng Feng",
+      "Shuo Shao"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/a9a25f462ee4aa4b0811cfa9a20d3735a1913d8f",
+    "arxivId": "2411.11478",
+    "citationCount": 10,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "Robust Watermarking for Language Models"
+  },
+  {
+    "title": "De-mark: Watermark Removal in Large Language Models",
+    "authors": [
+      "Ruibo Chen",
+      "Yihan Wu",
+      "Junfeng Guo",
+      "Heng Huang"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/60dd52a18a3bcd752050a4b7547c14931aff7687",
+    "arxivId": "2410.13808",
+    "citationCount": 2,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "Robust Watermarking for Language Models"
+  },
+  {
+    "title": "Can Watermarked LLMs be Identified by Users via Crafted Prompts?",
+    "authors": [
+      "Aiwei Liu",
+      "Sheng Guan",
+      "Yiming Liu",
+      "Leyi Pan",
+      "Yifei Zhang",
+      "Liancheng Fang",
+      "Lijie Wen",
+      "Philip S. Yu",
+      "Xuming Hu"
+    ],
+    "venue": "International Conference on Learning Representations",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/3861de24a6bfa19caac3583a68b102fe7c1ce334",
+    "arxivId": "2410.03168",
+    "citationCount": 10,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "Robust Watermarking for Language Models"
+  },
+  {
+    "title": "Discovering Spoofing Attempts on Language Model Watermarks",
+    "authors": [
+      "Thibaud Gloaguen",
+      "Nikola Jovanovi'c",
+      "Robin Staab",
+      "Martin T. Vechev"
+    ],
+    "venue": "",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/4fdc32c1f7012f14b8a9748ec5dc6830a5826874",
+    "arxivId": "2410.02693",
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Black-Box Detection of Language Model Watermarks",
+    "authors": [
+      "Thibaud Gloaguen",
+      "Nikola Jovanovic",
+      "Robin Staab",
+      "Martin T. Vechev"
+    ],
+    "venue": "International Conference on Learning Representations",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/317d012b7412a18264eb4a6afeff658ea3cc02be",
+    "arxivId": "2405.20777",
+    "citationCount": 10,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "Robust Watermarking for Language Models"
+  },
+  {
+    "title": "Mitigating Watermark Stealing Attacks in Generative Models via Multi-Key Watermarking",
+    "authors": [
+      "Toluwani Aremu",
+      "Noor Hussein",
+      "Munachiso Nwadike",
+      "Samuele Poppi",
+      "Jie Zhang",
+      "Karthik Nandakumar",
+      "Neil Gong",
+      "Nils Lukas"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/a40984e29d01c54f7a2b5039378ae1f9bc740629",
+    "arxivId": null,
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "Robust Watermarking for Language Models"
+  },
+  {
+    "title": "Securing the Language of Life: Inheritable Watermarks from DNA Language Models to Proteins",
+    "authors": [
+      "Zaixi Zhang",
+      "Ruofan Jin",
+      "Le Cong",
+      "Mengdi Wang"
+    ],
+    "venue": "",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/44dc3f8484f85d37f772f385d106153bae0f2469",
+    "arxivId": "2509.18207",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Optimizing Token Choice for Code Watermarking: A RL Approach",
+    "authors": [
+      "Zhimeng Guo",
+      "Huaisheng Zhu",
+      "Siyuan Xu",
+      "Hangfan Zhang",
+      "Teng Xiao",
+      "Minhao Cheng"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/228c725d2eaa1dcea3b56d432848bff6277c50c4",
+    "arxivId": "2508.11925",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "SAEMark: Multi-bit LLM Watermarking with Inference-Time Scaling",
+    "authors": [
+      "Zhuohao Yu",
+      "Xingru Jiang",
+      "Weizheng Gu",
+      "Yidong Wang",
+      "Shi-Bo Zhang",
+      "Wei Ye"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/ad99c3059ffdd1623af59e7aa80764b6c40b843c",
+    "arxivId": "2508.08211",
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Watermarking LLMs — Challenges and Opportunities in Electronic Design Automation",
+    "authors": [
+      "Matthew DeLorenzo",
+      "Phat Tieu",
+      "Chen Chen",
+      "Vasudev Gohil",
+      "Jeyavijayan Rajendran"
+    ],
+    "venue": "Coins",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/fd543e89551962e734344cd758a2c968732fe57d",
+    "arxivId": null,
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Enhancing Watermarking Quality for LLMs via Contextual Generation States Awareness",
+    "authors": [
+      "Peiru Yang",
+      "Xintian Li",
+      "Wanchun Ni",
+      "Jinhua Yin",
+      "Huili Wang",
+      "Guoshun Nan",
+      "Shangguang Wang",
+      "Yongfeng Huang",
+      "Tao Qi"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/d3c127d6fd3c87683d15d280080dc0edd51d4a19",
+    "arxivId": "2506.07403",
+    "citationCount": 1,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Invisible Entropy: Towards Safe and Efficient Low-Entropy LLM Watermarking",
+    "authors": [
+      "Tianle Gu",
+      "Zongqi Wang",
+      "Kexin Huang",
+      "Yuanqi Yao",
+      "Xiangliang Zhang",
+      "Yujiu Yang",
+      "Xiuying Chen"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/ccbf55e59c372cebb8629e2695d5da20bc8bbf4a",
+    "arxivId": "2505.14112",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "From Trade-off to Synergy: A Versatile Symbiotic Watermarking Framework for Large Language Models",
+    "authors": [
+      "Yidan Wang",
+      "Yubing Ren",
+      "Yanan Cao",
+      "Binxing Fang"
+    ],
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/724f02cfe9fea23d95055198575d9db255e9ac80",
+    "arxivId": "2505.09924",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Agent Guide: A Simple Agent Behavioral Watermarking Framework",
+    "authors": [
+      "Kaibo Huang",
+      "Zhongliang Yang",
+      "Linna Zhou"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/3d483169ad86fec17f0c6c67bfbdc3364af867a0",
+    "arxivId": "2504.05871",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Marking Code Without Breaking It: Code Watermarking for Detecting LLM-Generated Code",
+    "authors": [
+      "Jungin Kim",
+      "Shinwoo Park",
+      "Yo-Sub Han"
+    ],
+    "venue": "arXiv.org",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/6caca3cb7d0d3795e0e7c60fe4b39be693fbf730",
+    "arxivId": "2502.18851",
+    "citationCount": 2,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Generative AI in Cybersecurity: A Comprehensive Review of LLM Applications and Vulnerabilities",
+    "authors": [
+      "M. Ferrag",
+      "Fatima Alwahedi",
+      "A. Battah",
+      "Bilel Cherif",
+      "Abdechakour Mechri",
+      "Norbert Tihanyi",
+      "Tamás Bisztray",
+      "M. Debbah"
+    ],
+    "venue": "Internet of Things and Cyber-Physical Systems",
+    "year": 2025,
+    "url": "https://www.semanticscholar.org/paper/708fbb63222e02805c378abe8184a67feccbee9c",
+    "arxivId": null,
+    "citationCount": 9,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "A Survey on Adversarial Machine Learning for Code Data: Realistic Threats, Countermeasures, and Interpretations",
+    "authors": [
+      "Yulong Yang",
+      "Haoran Fan",
+      "Chenhao Lin",
+      "Qian Li",
+      "Zhengyu Zhao",
+      "Chao Shen",
+      "Xiaohong Guan"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/712e600bc5b991a064b8187655f94e26cd8b0043",
+    "arxivId": "2411.07597",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Watermarking Language Models through Language Models",
+    "authors": [
+      "Xin Zhong",
+      "Agnibh Dasgupta",
+      "A. Tanvir"
+    ],
+    "venue": "arXiv.org",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/8fa135e3ea7e8a079cf476d087944ecea3c4353b",
+    "arxivId": "2411.05091",
+    "citationCount": 4,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "MCGMark: An Encodable and Robust Online Watermark for Tracing LLM-Generated Malicious Code",
+    "authors": [
+      "Kaiwen Ning",
+      "Jiachi Chen",
+      "Qingyuan Zhong",
+      "Tao Zhang",
+      "Yanlin Wang",
+      "Wei Li",
+      "Jingwen Zhang",
+      "Jianxing Yu",
+      "Yuming Feng",
+      "Weizhe Zhang",
+      "Zibin Zheng"
+    ],
+    "venue": "",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/04f064ed13e27eed8397431a3ab6f05ff5c17ece",
+    "arxivId": "2408.01354",
+    "citationCount": 0,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "From Intentions to Techniques: A Comprehensive Taxonomy and Challenges in Text Watermarking for Large Language Models",
+    "authors": [
+      "Harsh Nishant Lalai",
+      "Aashish Anantha Ramakrishnan",
+      "Raj Sanjay Shah",
+      "Dongwon Lee"
+    ],
+    "venue": "North American Chapter of the Association for Computational Linguistics",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/b230545fbf276b6f6e01c6662a62bc2c01ca4b9f",
+    "arxivId": "2406.11106",
+    "citationCount": 2,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Does Your Neural Code Completion Model Use My Code? A Membership Inference Approach",
+    "authors": [
+      "Yao Wan",
+      "Guanghua Wan",
+      "Shijie Zhang",
+      "Hongyu Zhang",
+      "Yulei Sui",
+      "Pan Zhou",
+      "Hai Jin",
+      "Lichao Sun"
+    ],
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/2f2eb528d5a5415abf760b779e7108aa24116985",
+    "arxivId": "2404.14296",
+    "citationCount": 5,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "Efficient and Universal Watermarking for LLM-Generated Code Detection",
+    "authors": [
+      "Boquan Li",
+      "Zirui Fu",
+      "Mengdi Zhang",
+      "Peixin Zhang",
+      "Jun Sun",
+      "Xingmei Wang"
+    ],
+    "venue": "",
+    "year": 2024,
+    "url": "https://www.semanticscholar.org/paper/77756cf2b6fdf3591d9a595dfbea4d0e934fbcfa",
+    "arxivId": "2402.07518",
+    "citationCount": 2,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  },
+  {
+    "title": "A Survey of Text Watermarking in the Era of Large Language Models",
+    "authors": [
+      "Aiwei Liu",
+      "Leyi Pan",
+      "Yijian Lu",
+      "Jingjing Li",
+      "Xuming Hu",
+      "Lijie Wen",
+      "Irwin King",
+      "Philip S. Yu"
+    ],
+    "venue": "ACM Computing Surveys",
+    "year": 2023,
+    "url": "https://www.semanticscholar.org/paper/3686311263da911309233e93a271f44f2a1f1c3a",
+    "arxivId": "2312.07913",
+    "citationCount": 84,
+    "tags": [],
+    "source": "semantic_scholar",
+    "seedMatched": "A Watermark for Large Language Models of Code"
+  }
+]
