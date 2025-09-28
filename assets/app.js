@@ -322,6 +322,6 @@ async function showMarkdown(mdFile, containerId) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    showProjects('projects/ndss26/char-ndss-en.md', 'Character-Level Perturbations Disrupt LLM Watermarks (NDSS)');
-    showMarkdown('projects/about/cv.md', 'about-container');
+    showProjects('./projects/ndss26/char-ndss-en.md', 'Character-Level Perturbations Disrupt LLM Watermarks (NDSS)');
+    showMarkdown('./projects/about/cv.md', 'about-container');
 });

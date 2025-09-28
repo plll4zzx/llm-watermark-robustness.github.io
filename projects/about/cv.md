@@ -5,7 +5,7 @@
 
 # Zhang Zhaoxi
 
-- Email: [zhaoxi.zhang-1@student.uts.edu.au](mailto:zhaoxi.zhang-1@student.uts.edu.au) [github](https://github.com)
+- Email: [Zhaoxi.Zhang-1@student.uts.edu.au](zhaoxi.zhang-1@student.uts.edu.au) [github](https://github.com/plll4zzx)
 
 ## Education  
 2023 – now: PhD Candidate, University of Technology Sydney. Major in: Machine Learning, Cybersecurity  
