@@ -38,177 +38,29 @@ function activate(tab) {
 }
 
 async function showReading(mode) {
-    const container = $('#reading-container');
-    const tocBox = $('#reading-toc');
+    const container = $('#reading-container');   // 论文内容区
+    const tocBox = $('#reading-toc');            // 左侧目录区
     const summary = $('#reading-summary');
+
     container.innerHTML = '<p class="muted">Loading…</p>';
-    tocBox.innerHTML = '';  // 清空目录
+    tocBox.innerHTML = ''; // 每次刷新清空目录
 
     let url, label;
     if (mode === 'formal') { url = 'data/index.json'; label = 'Formal curated list'; }
-    if (mode === 'latest') { url = 'data/candidates_latest.json'; label = 'Discovery by keywords'; }
-    if (mode === 'cites') { url = 'data/candidates_citations.json'; label = 'Discovery by seed citations'; }
+    else if (mode === 'latest') { url = 'data/candidates_latest.json'; label = 'Discovery by keywords'; }
+    else if (mode === 'cites') { url = 'data/candidates_citations.json'; label = 'Discovery by seed citations'; }
 
     try {
         const res = await fetch(url, { cache: 'no-store' });
         let items = await res.json();
+
         summary.textContent = `${label}: ${items.length} entries`;
         container.innerHTML = '';
 
-        if (mode === 'latest' || mode === 'cites') {
-            // 🔹 分组逻辑和排序（保持之前的代码）
-            const groups = {};
-            if (mode === 'latest') {
-                // 🔹 先整体排序
-                items.sort((a, b) => {
-                    const ya = a.year || 0, yb = b.year || 0;
-                    if (ya !== yb) return yb - ya; // year 降序
-                    const ida = (a.arxivId || '').toString();
-                    const idb = (b.arxivId || '').toString();
-                    return idb.localeCompare(ida, 'en', { numeric: true }); // arxivId 降序
-                });
-
-                // 🔹 按年份分组
-                const groups = {};
-                items.forEach(p => {
-                    const y = p.year || 'Unknown Year';
-                    if (!groups[y]) groups[y] = [];
-                    groups[y].push(p);
-                });
-
-                // 🔹 年份组也按降序排列
-                const sortedGroups = Object.keys(groups)
-                    .sort((a, b) => {
-                        const ya = a === 'Unknown Year' ? 0 : parseInt(a, 10);
-                        const yb = b === 'Unknown Year' ? 0 : parseInt(b, 10);
-                        return yb - ya;
-                    })
-                    .map(y => [y, groups[y]]);
-
-                // 🔹 渲染目录和分组
-                const toc = document.createElement('nav');
-                toc.className = 'toc';
-                toc.innerHTML = '<h4>Years</h4><ul></ul>';
-                const tocList = toc.querySelector('ul');
-                tocBox.appendChild(toc);
-
-                sortedGroups.forEach(([year, papers], idx) => {
-                    const sectionId = `${mode}-${idx}`;
-
-                    // 目录项
-                    const li = document.createElement('li');
-                    li.innerHTML = `<a href="#${sectionId}">${year}</a>`;
-                    tocList.appendChild(li);
-
-                    // 小标题
-                    const header = document.createElement('h3');
-                    header.id = sectionId;
-                    header.textContent = year;
-                    container.appendChild(header);
-
-                    // 小组内再排序（确保一致性）
-                    papers.sort((a, b) => {
-                        const ya = a.year || 0, yb = b.year || 0;
-                        if (ya !== yb) return yb - ya;
-                        const ida = (a.arxivId || '').toString();
-                        const idb = (b.arxivId || '').toString();
-                        return idb.localeCompare(ida, 'en', { numeric: true });
-                    });
-
-                    // 渲染卡片
-                    const groupDiv = document.createElement('div');
-                    groupDiv.className = 'cards';
-                    papers.forEach(renderPaperCard(groupDiv));
-                    container.appendChild(groupDiv);
-                });
-            } else if (mode === 'cites') {
-                // 🔹 按 seedMatched 分组
-                const groups = {};
-                items.forEach(p => {
-                    const seed = p.seedMatched || 'Unknown Seed';
-                    if (!groups[seed]) groups[seed] = [];
-                    groups[seed].push(p);
-                });
-
-                // 🔹 渲染目录
-                const toc = document.createElement('nav');
-                toc.className = 'toc';
-                toc.innerHTML = '<h4>Seeds</h4><ul></ul>';
-                const tocList = toc.querySelector('ul');
-                tocBox.appendChild(toc);
-
-                // 🔹 渲染分组
-                Object.entries(groups).forEach(([seed, papers], idx) => {
-                    const sectionId = `${mode}-${idx}`;
-
-                    // 目录项
-                    const li = document.createElement('li');
-                    li.innerHTML = `<a href="#${sectionId}">${seed}</a>`;
-                    tocList.appendChild(li);
-
-                    // 小标题
-                    const header = document.createElement('h3');
-                    header.id = sectionId;
-                    header.textContent = seed;
-                    container.appendChild(header);
-
-                    // 🔹 小组内排序：year 降序 → arxivId 降序
-                    papers.sort((a, b) => {
-                        const ya = a.year || 0, yb = b.year || 0;
-                        if (ya !== yb) return yb - ya;
-                        const ida = (a.arxivId || '').toString();
-                        const idb = (b.arxivId || '').toString();
-                        return idb.localeCompare(ida, 'en', { numeric: true });
-                    });
-
-                    // 卡片
-                    const groupDiv = document.createElement('div');
-                    groupDiv.className = 'cards';
-                    papers.forEach(renderPaperCard(groupDiv));
-                    container.appendChild(groupDiv);
-                });
-            } else {
-                items.forEach(p => {
-                    const seed = p.seedMatched || 'Unknown Seed';
-                    if (!groups[seed]) groups[seed] = [];
-                    groups[seed].push(p);
-                });
-            }
-
-            // 🔹 渲染目录
-            const toc = document.createElement('nav');
-            toc.className = 'toc';
-            toc.innerHTML = `<h4>${mode === 'latest' ? 'Years' : 'Seeds'}</h4><ul></ul>`;
-            const tocList = toc.querySelector('ul');
-            tocBox.appendChild(toc);
-
-            // 🔹 渲染分组
-            Object.entries(groups).forEach(([groupKey, papers], idx) => {
-                const sectionId = `${mode}-${idx}`;
-
-                // 目录项
-                const li = document.createElement('li');
-                li.innerHTML = `<a href="#${sectionId}">${groupKey}</a>`;
-                tocList.appendChild(li);
-
-                // 小标题
-                const header = document.createElement('h3');
-                header.id = sectionId;
-                header.textContent = groupKey;
-                container.appendChild(header);
-
-                // 卡片
-                const groupDiv = document.createElement('div');
-                groupDiv.className = 'cards';
-                papers.forEach(renderPaperCard(groupDiv));
-                container.appendChild(groupDiv);
-            });
-
-        } else if (mode === 'formal') {
-            // 🔹 你定义的目录顺序
-            const TAG_ORDER = ["LLM watermark", "Attack", "Survey", "Analysis"];
-
-            // 分组
+        // -------------------------
+        // Formal 模式：按第一个 tag 分组
+        // -------------------------
+        if (mode === 'formal') {
             const groups = {};
             items.forEach(p => {
                 const tags = p.tags || [];
@@ -217,49 +69,66 @@ async function showReading(mode) {
                 groups[group].push(p);
             });
 
-            // 渲染目录
-            const toc = document.createElement('nav');
-            toc.className = 'toc';
-            toc.innerHTML = '<h4>Tags</h4><ul></ul>';
-            const tocList = toc.querySelector('ul');
-            tocBox.appendChild(toc);
+            renderGroupedContent('Tags', groups, mode, container, tocBox);
 
-            // 🔹 排序：先按 TAG_ORDER 中的顺序，再排其他
-            const orderedGroups = Object.keys(groups).sort((a, b) => {
-                const ia = TAG_ORDER.indexOf(a);
-                const ib = TAG_ORDER.indexOf(b);
-                if (ia === -1 && ib === -1) {
-                    return a.localeCompare(b); // 都不在 TAG_ORDER，按字母排
-                }
-                if (ia === -1) return 1; // a 不在 TAG_ORDER，排后面
-                if (ib === -1) return -1; // b 不在 TAG_ORDER，排后面
-                return ia - ib; // 都在 TAG_ORDER，按顺序
+            // -------------------------
+            // Latest 模式：按年份分组
+            // -------------------------
+        } else if (mode === 'latest') {
+            // 🔹 先整体排序：year 降序 → arxivId 降序
+            items.sort((a, b) => {
+                const ya = a.year || 0, yb = b.year || 0;
+                if (ya !== yb) return yb - ya;
+                const ida = (a.arxivId || '').toString();
+                const idb = (b.arxivId || '').toString();
+                return idb.localeCompare(ida, 'en', { numeric: true });
             });
 
-            // 渲染分组
-            orderedGroups.forEach((group, idx) => {
-                const sectionId = `${mode}-${idx}`;
-
-                // 目录项
-                const li = document.createElement('li');
-                li.innerHTML = `<a href="#${sectionId}">${group}</a>`;
-                tocList.appendChild(li);
-
-                // 小标题
-                const header = document.createElement('h3');
-                header.id = sectionId;
-                header.textContent = group;
-                container.appendChild(header);
-
-                // 卡片
-                const groupDiv = document.createElement('div');
-                groupDiv.className = 'cards';
-                groups[group].forEach(renderPaperCard(groupDiv));
-                container.appendChild(groupDiv);
+            // 🔹 分组
+            const groups = {};
+            items.forEach(p => {
+                const y = p.year || 'Unknown Year';
+                if (!groups[y]) groups[y] = [];
+                groups[y].push(p);
             });
-        } else {
-            // formal: 平铺
-            items.forEach(renderPaperCard(container));
+
+            // 🔹 转成数组并排序（保证严格逆序）
+            const orderedGroups = Object.entries(groups)
+                .sort(([a], [b]) => {
+                    const ya = a === 'Unknown Year' ? -Infinity : parseInt(a, 10);
+                    const yb = b === 'Unknown Year' ? -Infinity : parseInt(b, 10);
+                    return yb - ya; // 年份大的排前
+                });
+
+            // 🔹 转回对象（可选，renderGroupedContent 支持数组也行）
+            const sortedGroups = {};
+            orderedGroups.forEach(([y, papers]) => { sortedGroups[y] = papers; });
+
+            renderGroupedContent('Years', sortedGroups, mode, container, tocBox);
+        } else if (mode === 'cites') {
+
+            // -------------------------
+            // Cites 模式：按 seedMatched 分组
+            // -------------------------
+            const groups = {};
+            items.forEach(p => {
+                const seed = p.seedMatched || 'Unknown Seed';
+                if (!groups[seed]) groups[seed] = [];
+                groups[seed].push(p);
+            });
+
+            // 小组内排序
+            Object.values(groups).forEach(papers => {
+                papers.sort((a, b) => {
+                    const ya = a.year || 0, yb = b.year || 0;
+                    if (ya !== yb) return yb - ya;
+                    const ida = (a.arxivId || '').toString();
+                    const idb = (b.arxivId || '').toString();
+                    return idb.localeCompare(ida, 'en', { numeric: true });
+                });
+            });
+
+            renderGroupedContent('Seeds', groups, mode, container, tocBox);
         }
 
     } catch (err) {
@@ -268,7 +137,36 @@ async function showReading(mode) {
     }
 }
 
+function renderGroupedContent(title, groups, mode, container, tocBox) {
+    // 渲染目录
+    const toc = document.createElement('nav');
+    toc.className = 'toc';
+    toc.innerHTML = `<h4>${title}</h4><ul></ul>`;
+    const tocList = toc.querySelector('ul');
+    tocBox.appendChild(toc);
 
+    // 渲染每个分组
+    Object.entries(groups).forEach(([groupKey, papers], idx) => {
+        const sectionId = `${mode}-${idx}`;
+
+        // 目录项
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="#${sectionId}">${groupKey}</a>`;
+        tocList.appendChild(li);
+
+        // 小标题
+        const header = document.createElement('h3');
+        header.id = sectionId;
+        header.textContent = groupKey;
+        container.appendChild(header);
+
+        // 卡片区
+        const groupDiv = document.createElement('div');
+        groupDiv.className = 'cards';
+        papers.forEach(renderPaperCard(groupDiv));
+        container.appendChild(groupDiv);
+    });
+}
 
 
 
@@ -312,3 +210,28 @@ async function renderProjects() {
         container.innerHTML = '<p class="muted">Add <code>projects/projects.json</code> to show your papers.</p>';
     }
 }
+
+// 主题切换
+const themeToggle = document.getElementById('theme-toggle');
+
+// 初始化：根据 localStorage 或系统偏好
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+    themeToggle.textContent = savedTheme === "dark" ? "🌙 Dark" : "🌞 Light";
+} else if (prefersDark) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    themeToggle.textContent = "🌙 Dark";
+} else {
+    document.documentElement.setAttribute("data-theme", "light");
+    themeToggle.textContent = "🌞 Light";
+}
+
+themeToggle.addEventListener("click", () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    themeToggle.textContent = newTheme === "dark" ? "🌙 Dark" : "🌞 Light";
+});

@@ -1,4 +1,19 @@
+/* 主题变量：浅色为默认 */
 :root {
+    --bg: #f5f5f5;
+    /* 页面背景 */
+    --card: #ffffff;
+    /* 卡片 / 容器 */
+    --ink: #222222;
+    /* 主文字 */
+    --muted: #666666;
+    /* 次要文字 */
+    --brand: #007acc;
+    /* 高亮蓝色 */
+}
+
+/* 深色主题 */
+:root[data-theme="dark"] {
     --bg: #0b0e13;
     --card: #121722;
     --ink: #e7ecf3;
@@ -6,6 +21,7 @@
     --brand: #5ea0ef;
 }
 
+/* 基础设置 */
 * {
     box-sizing: border-box;
 }
@@ -14,16 +30,20 @@ body {
     margin: 0;
     font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
     color: var(--ink);
-    background: linear-gradient(180deg, #0b0e13, #0d1117 40%, #0b0e13);
+    background: var(--bg);
 }
 
+/* 顶部导航栏 */
 .site-header {
     padding: 24px 16px;
-    border-bottom: 1px solid #1f2633;
+    border-bottom: 1px solid #ddd;
     backdrop-filter: saturate(130%) blur(6px);
     position: sticky;
     top: 0;
-    background: #0d1117cc;
+    background: var(--card);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
@@ -41,16 +61,17 @@ h1 {
     border-radius: 999px;
     text-decoration: none;
     color: var(--ink);
-    border: 1px solid #1f2633;
+    border: 1px solid #ccc;
 }
 
 .tab.active,
 .tab:hover {
     background: var(--brand);
     border-color: var(--brand);
-    color: #07131f;
+    color: #fff;
 }
 
+/* 主体 */
 main {
     max-width: 1100px;
     margin: 20px auto;
@@ -71,19 +92,31 @@ main {
     margin: 10px 0 8px;
 }
 
+/* 按钮 */
 .btn {
-    background: #111827;
+    background: #fff;
     color: var(--ink);
-    border: 1px solid #1f2633;
+    border: 1px solid #ccc;
     padding: 6px 10px;
     border-radius: 8px;
     cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
 }
 
 .btn:hover {
     border-color: var(--brand);
+    background: #f0f8ff;
+    color: var(--brand);
 }
 
+.btn.active {
+    background: var(--brand);
+    color: #fff;
+    border-color: var(--brand);
+}
+
+/* 卡片网格 */
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -92,9 +125,10 @@ main {
 
 .card {
     background: var(--card);
-    border: 1px solid #1f2633;
+    border: 1px solid #ddd;
     border-radius: 14px;
     padding: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .card h3 {
@@ -108,6 +142,7 @@ main {
     margin-bottom: 8px;
 }
 
+/* 标签 */
 .badges {
     display: flex;
     flex-wrap: wrap;
@@ -118,11 +153,13 @@ main {
 .badge {
     font-size: 11px;
     padding: 3px 8px;
-    border: 1px solid #273041;
+    border: 1px solid #ccc;
     border-radius: 999px;
-    color: #c8d6e5;
+    color: #444;
+    background: #f9f9f9;
 }
 
+/* 文字 */
 .muted {
     color: var(--muted);
 }
@@ -131,41 +168,46 @@ main {
     font-size: 12px;
 }
 
+/* 页脚 */
 .site-footer {
     max-width: 1100px;
     margin: 24px auto;
     padding: 16px;
     color: var(--muted);
-    border-top: 1px solid #1f2633;
+    border-top: 1px solid #ddd;
+    background: var(--card);
 }
 
+/* 代码块 */
 code {
-    background: #0e1521;
+    background: #f0f0f0;
     padding: 2px 6px;
     border-radius: 6px;
-    border: 1px solid #1f2633;
+    border: 1px solid #ddd;
 }
 
+/* 链接 */
 .card h3 a {
-    color: #ffffff;
+    color: var(--ink);
     text-decoration: none;
-    /* 去掉下划线，可选 */
 }
 
 .card h3 a:hover {
-    color: #5ea0ef;
+    color: var(--brand);
     text-decoration: underline;
 }
 
+/* 目录 */
 .toc {
     float: left;
     width: 200px;
     margin-right: 20px;
     padding: 10px;
-    border-right: 1px solid #1f2633;
+    border-right: 1px solid #ddd;
+    background: var(--card);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 80px;
-    /* 保持在页面左边 */
 }
 
 .toc h4 {
@@ -194,6 +236,12 @@ code {
     color: var(--brand);
 }
 
+.toc a.active {
+    font-weight: bold;
+    color: var(--brand);
+}
+
+/* 阅读布局 */
 .reading-layout {
     display: flex;
     align-items: flex-start;
@@ -210,36 +258,9 @@ code {
 .cards-area {
     flex: 1;
     min-width: 0;
-    /* 防止内容被压缩 */
 }
 
 .cards-area h3 {
     margin-top: 24px;
     margin-bottom: 12px;
-}
-
-.toc h4 {
-    margin: 0 0 8px;
-    font-size: 14px;
-    color: var(--muted);
-}
-
-.toc ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.toc li {
-    margin-bottom: 6px;
-}
-
-.toc a {
-    color: var(--ink);
-    text-decoration: none;
-    font-size: 13px;
-}
-
-.toc a:hover {
-    color: var(--brand);
 }
