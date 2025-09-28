@@ -333,3 +333,11 @@ code {
     max-width: 180px;
     border-radius: 8px;
 }
+
+.github-buttons {
+    /* display: flex; */
+    gap: 8px;
+    /* 两个按钮之间的间距 */
+    /* align-items: center; */
+    /* 垂直对齐 */
+}
