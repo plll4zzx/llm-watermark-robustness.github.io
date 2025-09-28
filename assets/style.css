@@ -264,3 +264,57 @@ code {
     margin-top: 24px;
     margin-bottom: 12px;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 50%;
+    background: var(--brand);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    /* 默认隐藏 */
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background: #005fa3;
+    /* 深一点的蓝色 */
+}
+
+#project-toc {
+    width: 200px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    position: sticky;
+    top: 80px;
+    background: var(--card);
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+#project-toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#project-toc li {
+    margin-bottom: 6px;
+}
+
+#project-toc a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#project-toc a:hover {
+    color: var(--brand);
+}

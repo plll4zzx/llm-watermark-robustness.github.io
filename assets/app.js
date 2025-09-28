@@ -75,7 +75,7 @@ async function showReading(mode) {
             // Latest 模式：按年份分组
             // -------------------------
         } else if (mode === 'latest') {
-            // 🔹 先整体排序：year 降序 → arxivId 降序
+            // 先整体排序：year 降序 → arxivId 降序
             items.sort((a, b) => {
                 const ya = a.year || 0, yb = b.year || 0;
                 if (ya !== yb) return yb - ya;
@@ -84,7 +84,7 @@ async function showReading(mode) {
                 return idb.localeCompare(ida, 'en', { numeric: true });
             });
 
-            // 🔹 分组
+            // 分组
             const groups = {};
             items.forEach(p => {
                 const y = p.year || 'Unknown Year';
@@ -92,19 +92,15 @@ async function showReading(mode) {
                 groups[y].push(p);
             });
 
-            // 🔹 转成数组并排序（保证严格逆序）
-            const orderedGroups = Object.entries(groups)
-                .sort(([a], [b]) => {
-                    const ya = a === 'Unknown Year' ? -Infinity : parseInt(a, 10);
-                    const yb = b === 'Unknown Year' ? -Infinity : parseInt(b, 10);
-                    return yb - ya; // 年份大的排前
-                });
+            // 🔹 转成数组并按“年份数值”降序；Unknown Year 放最后
+            const orderedEntries = Object.entries(groups).sort(([a], [b]) => {
+                const ya = a === 'Unknown Year' ? -Infinity : parseInt(a, 10);
+                const yb = b === 'Unknown Year' ? -Infinity : parseInt(b, 10);
+                return yb - ya; // 年份大的排前
+            });
 
-            // 🔹 转回对象（可选，renderGroupedContent 支持数组也行）
-            const sortedGroups = {};
-            orderedGroups.forEach(([y, papers]) => { sortedGroups[y] = papers; });
-
-            renderGroupedContent('Years', sortedGroups, mode, container, tocBox);
+            // 直接把“数组 entries”传给渲染函数（保持你排序后的顺序）
+            renderGroupedContent('Years', orderedEntries, mode, container, tocBox);
         } else if (mode === 'cites') {
 
             // -------------------------
@@ -137,7 +133,12 @@ async function showReading(mode) {
     }
 }
 
-function renderGroupedContent(title, groups, mode, container, tocBox) {
+function renderGroupedContent(title, groupsOrEntries, mode, container, tocBox) {
+    // 支持两种输入：数组 entries（优先，保序）或普通对象（无序）
+    const entries = Array.isArray(groupsOrEntries)
+        ? groupsOrEntries
+        : Object.entries(groupsOrEntries);
+
     // 渲染目录
     const toc = document.createElement('nav');
     toc.className = 'toc';
@@ -145,8 +146,8 @@ function renderGroupedContent(title, groups, mode, container, tocBox) {
     const tocList = toc.querySelector('ul');
     tocBox.appendChild(toc);
 
-    // 渲染每个分组
-    Object.entries(groups).forEach(([groupKey, papers], idx) => {
+    // 按 entries 的既定顺序渲染
+    entries.forEach(([groupKey, papers], idx) => {
         const sectionId = `${mode}-${idx}`;
 
         // 目录项
@@ -159,6 +160,15 @@ function renderGroupedContent(title, groups, mode, container, tocBox) {
         header.id = sectionId;
         header.textContent = groupKey;
         container.appendChild(header);
+
+        // 小组内排序（稳妥起见再排一次）
+        papers.sort((a, b) => {
+            const ya = a.year || 0, yb = b.year || 0;
+            if (ya !== yb) return yb - ya;
+            const ida = (a.arxivId || '').toString();
+            const idb = (b.arxivId || '').toString();
+            return idb.localeCompare(ida, 'en', { numeric: true });
+        });
 
         // 卡片区
         const groupDiv = document.createElement('div');
@@ -234,4 +244,67 @@ themeToggle.addEventListener("click", () => {
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
     themeToggle.textContent = newTheme === "dark" ? "🌙 Dark" : "🌞 Light";
+});
+
+const backToTopBtn = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {  // 滚动超过200px才显示
+        backToTopBtn.style.display = 'block';
+    } else {
+        backToTopBtn.style.display = 'none';
+    }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'  // 平滑滚动
+    });
+});
+
+async function showProjects(mdFile, title) {
+    const container = document.getElementById('project-container');
+    const tocBox = document.getElementById('project-toc');
+
+    container.innerHTML = '<p class="muted">Loading…</p>';
+    tocBox.innerHTML = '';
+
+    try {
+        // 读取 markdown
+        const res = await fetch(mdFile, { cache: 'no-store' });
+        const text = await res.text();
+
+        // 转成 HTML
+        const html = marked.parse(text);
+
+        // 插入内容
+        container.innerHTML = html;
+
+        // 🔹 生成目录
+        const toc = document.createElement('nav');
+        toc.className = 'toc';
+        toc.innerHTML = `<h4>${title}</h4><ul></ul>`;
+        const tocList = toc.querySelector('ul');
+
+        // 抓取标题
+        const headers = container.querySelectorAll('h1, h2, h3, h4');
+        headers.forEach((h, idx) => {
+            const id = `h-${idx}`;
+            h.id = id;
+
+            const li = document.createElement('li');
+            li.style.marginLeft = `${(parseInt(h.tagName[1]) - 1) * 12}px`; // 按级别缩进
+            li.innerHTML = `<a href="#${id}">${h.textContent}</a>`;
+            tocList.appendChild(li);
+        });
+
+        tocBox.appendChild(toc);
+
+    } catch (err) {
+        container.innerHTML = `<p class="muted">Failed to load project doc.</p>`;
+    }
+}
+document.addEventListener('DOMContentLoaded', () => {
+    showProjects('projects/ndss26/char-ndss-en.md', 'Character-Level Perturbations Disrupt LLM Watermarks (NDSS)');
 });

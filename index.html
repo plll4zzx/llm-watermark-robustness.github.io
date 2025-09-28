@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Large Language Model Watermark: Capability and Robustness</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
@@ -41,10 +42,12 @@
             </p>
         </section>
 
-
         <section id="projects" class="panel">
-            <h2>Projects (My Papers)</h2>
-            <div id="projects-container" class="cards"></div>
+            <h2>Projects</h2>
+            <div class="reading-layout">
+                <aside id="project-toc"></aside>
+                <div id="project-container" class="cards-area"></div>
+            </div>
         </section>
 
 
@@ -58,6 +61,7 @@
     </main>
 
 
+    <button id="back-to-top">↑ Top</button>
     <footer class="site-footer">© <span id="year"></span> Large Language Model Watermark: Capability and Robustness
     </footer>
     <script src="./assets/app.js?v=1"></script>
