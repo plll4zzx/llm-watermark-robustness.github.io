@@ -1,0 +1,34 @@
+name: manual-updates
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Which task to run"
+        required: true
+        default: latest
+        type: choice
+        options: [latest, citations, build]
+
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      with: { python-version: '3.11' }
+      - run: pip install requests pyyaml
+      - name: Run task
+        env:
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.task }}" = "latest" ]; then python scripts/update_new_papers.py; fi
+          if [ "${{ github.event.inputs.task }}" = "citations" ]; then python scripts/update_citations.py; fi
+          if [ "${{ github.event.inputs.task }}" = "build" ]; then python scripts/build_index.py; fi
+        - name: Commit & push
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          git commit -m "ci: ${{ github.event.inputs.task }} run" || echo "No changes"
+          git push

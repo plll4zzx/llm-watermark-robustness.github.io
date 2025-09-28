@@ -1,0 +1,147 @@
+:root {
+    --bg: #0b0e13;
+    --card: #121722;
+    --ink: #e7ecf3;
+    --muted: #9aa4b2;
+    --brand: #5ea0ef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+    color: var(--ink);
+    background: linear-gradient(180deg, #0b0e13, #0d1117 40%, #0b0e13);
+}
+
+.site-header {
+    padding: 24px 16px;
+    border-bottom: 1px solid #1f2633;
+    backdrop-filter: saturate(130%) blur(6px);
+    position: sticky;
+    top: 0;
+    background: #0d1117cc;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.tab {
+    padding: 8px 12px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--ink);
+    border: 1px solid #1f2633;
+}
+
+.tab.active,
+.tab:hover {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #07131f;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block;
+}
+
+.reading-controls {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0 8px;
+}
+
+.btn {
+    background: #111827;
+    color: var(--ink);
+    border: 1px solid #1f2633;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: var(--brand);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid #1f2633;
+    border-radius: 14px;
+    padding: 12px;
+}
+
+.card h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+}
+
+.card .meta {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.badge {
+    font-size: 11px;
+    padding: 3px 8px;
+    border: 1px solid #273041;
+    border-radius: 999px;
+    color: #c8d6e5;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.small {
+    font-size: 12px;
+}
+
+.site-footer {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 16px;
+    color: var(--muted);
+    border-top: 1px solid #1f2633;
+}
+
+code {
+    background: #0e1521;
+    padding: 2px 6px;
+    border-radius: 6px;
+    border: 1px solid #1f2633;
+}

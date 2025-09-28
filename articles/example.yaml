@@ -1,0 +1,12 @@
+id: example-2025-zhang
+title: Character-Level Perturbations Disrupt LLM Watermarks
+authors: ["Xiaomei Zhang", "Co-authors"]
+year: 2026
+venue: NDSS
+url: https://example.com/ndss-2026-paper
+tags: [attack, evaluation]
+abstract: >-
+  We show that small character-level edits disrupt detector tokenization and significantly reduce watermark detectability...
+source: manual
+addedAt: 2025-09-28
+citationCount: 0

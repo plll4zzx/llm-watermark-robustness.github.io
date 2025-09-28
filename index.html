@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LLM Watermark Hub</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>LLM Watermark Hub</h1>
+        <nav class="tabs">
+            <a href="#reading" data-tab="reading" class="tab active">Reading List</a>
+            <a href="#projects" data-tab="projects" class="tab">Projects</a>
+            <a href="#about" data-tab="about" class="tab">About</a>
+        </nav>
+    </header>
+
+
+    <main id="app">
+        <section id="reading" class="panel active">
+            <h2>Reading List</h2>
+            <div class="reading-controls">
+                <button id="show-formal" class="btn">Formal (Curated)</button>
+                <button id="show-latest" class="btn">Latest (Keyword Search)</button>
+                <button id="show-cites" class="btn">Latest (Citations to Seeds)</button>
+            </div>
+            <div id="reading-summary" class="muted"></div>
+            <div id="reading-container" class="cards"></div>
+            <p class="muted small">Formal list comes from <code>data/index.json</code>. Discovery lists come from
+                <code>data/candidates_*.json</code>.</p>
+        </section>
+
+
+        <section id="projects" class="panel">
+            <h2>Projects (My Papers)</h2>
+            <div id="projects-container" class="cards"></div>
+        </section>
+
+
+        <section id="about" class="panel">
+            <h2>About</h2>
+            <p>This site curates research on LLM watermarking: attacks, defenses, evaluations, standards, and more. The
+                Reading List shows a formal curated view and two discovery feeds you can refresh by running local
+                scripts.</p>
+            <p>Maintained by <strong>Your Name</strong>. Site code in this repository. Licensed MIT.</p>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">© <span id="year"></span> LLM Watermark Hub</footer>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
